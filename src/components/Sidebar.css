@@ -1,8 +1,9 @@
 .sidebar {
   width: 240px;
-  height: 100vh;
+  height: calc(100vh - 56px);
   background-color: var(--bg-color);
-  padding: 12px 0;
+  color: var(--text-color);
+  padding-top: 12px;
   overflow-y: auto;
   position: fixed;
   left: 0;
@@ -13,20 +14,25 @@
   display: flex;
   align-items: center;
   padding: 10px 24px;
-  color: var(--text-color);
   text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.2s;
 }
 
 .sidebar-item:hover {
   background-color: var(--hover-color);
 }
 
-.sidebar-item i {
-  margin-right: 24px;
+.sidebar-item svg {
   font-size: 24px;
+  margin-right: 24px;
 }
 
-.sidebar hr {
+.sidebar-item span {
+  font-size: 14px;
+}
+
+hr {
   border: none;
   border-top: 1px solid var(--secondary-color);
   margin: 12px 0;

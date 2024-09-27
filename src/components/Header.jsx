@@ -8,11 +8,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <button className="menu-button">
-          <i className="fas fa-bars"></i>
-        </button>
         <Link to="/" className="logo">
-          <img src="/youtube-logo.png" alt="YouTube" />
+          <img src="https://cdn.pixabay.com/photo/2021/02/19/14/20/youtube-6030352_1280.png" alt="YouTube" />
+          <span className="logo-text" style={{ fontSize: '24px' }}>Youtube Clone</span>
         </Link>
       </div>
       <SearchBar />

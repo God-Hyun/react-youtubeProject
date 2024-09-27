@@ -14,8 +14,8 @@ function App() {
     <Router>
       <div className="app-container">
         <Header />
+        <Sidebar />
         <div className="main-content">
-          <Sidebar />
           <AppRouter />
         </div>
       </div>
