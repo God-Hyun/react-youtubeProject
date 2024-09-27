@@ -15,23 +15,24 @@ React를 활용한 youtube 클론 코딩
 
 ## 설치 방법
 
+ // Start of Selection
 1. 저장소를 클론합니다:
 
    ```bash
-   git clone https://github.com/username/youtube-clone.git
+   git clone https://github.com/God-Hyun/react-youtubeProject.git
    ```
 
 2. 필요한 패키지를 설치합니다:
 
    ```bash
    cd youtube-clone
-   npm install
+   yarn install
    ```
 
 3. 개발 서버를 시작합니다:
 
    ```bash
-   npm start
+   yarn start
    ```
 
 ## 사용 기술

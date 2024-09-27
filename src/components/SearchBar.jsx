@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";  // useHistory 대신 useNavigate 사용
 import useStore from "../store";
 import './SearchBar.css';
+import '../App.css';
 
 function SearchBar() {
   const navigate = useNavigate();  // useHistory 대신 useNavigate 사용

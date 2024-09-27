@@ -1,21 +1,24 @@
 import React, { useEffect } from 'react';
 import useStore from '../store';
-import VideoList from '../components/VideoList';
-import VideoDetail from '../components/VideoDetail';
-import SearchBar from '../components/SearchBar';
+import VideoGrid from '../components/VideoGrid';
+import Sidebar from '../components/Sidebar';
+import './Home.css';
+import '../App.css';
 
 function Home() {
-    const { videos, selectedVideo, fetchVideos } = useStore();
+    const { fetchVideos } = useStore();
 
     useEffect(() => {
-        fetchVideos('React 튜토리얼');
+        fetchVideos('');  // 빈 문자열로 변경하여 인기 동영상을 가져오도록 함
     }, [fetchVideos]);
 
     return (
-        <div>
-            <SearchBar />
-            <VideoDetail video={selectedVideo} />
-            <VideoList videos={videos} />
+        <div className="home">
+            <Sidebar />
+            <main className="home-content">
+                <h2>추천 동영상</h2>
+                <VideoGrid />
+            </main>
         </div>
     );
 }

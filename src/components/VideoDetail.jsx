@@ -1,4 +1,7 @@
 import React from 'react';
+import '../App.css';
+import './VideoDetail.css';
+
 
 function VideoDetail({ video }) {
   if (!video) return <div>Loading...</div>;

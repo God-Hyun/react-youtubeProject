@@ -1,0 +1,33 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: var(--bg-color);
+  padding: 12px 0;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 56px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background-color: var(--hover-color);
+}
+
+.sidebar-item i {
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid var(--secondary-color);
+  margin: 12px 0;
+}

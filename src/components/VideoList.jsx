@@ -1,6 +1,8 @@
 import React from "react";
 import useStore from '../store';
 import VideoItem from "./VideoItem";
+import '../App.css';
+import './VideoList.css';
 
 function VideoList() {
   const { videos, setSelectedVideo } = useStore();
