@@ -25,7 +25,7 @@ function Header() {
       <div className="header-left">
         <Link to="/" className="logo">
           <img src="https://cdn.pixabay.com/photo/2021/02/19/14/20/youtube-6030352_1280.png" alt="YouTube" />
-          <span className="logo-text">Youtube Clone</span>
+          <span className="logo-text">Godhyun's YouTube</span>
         </Link>
       </div>
       <SearchBar />
