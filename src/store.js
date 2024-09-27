@@ -16,6 +16,21 @@ const useStore = create((set) => ({
 
   setSelectedVideo: (video) => set({ selectedVideo: video }),
   setSearchTerm: (term) => set({ searchTerm: term }),
+  
+  isLoggedIn: false,
+  user: null,
+
+  login: (username, password) => {
+    // 실제 인증 로직은 여기에 구현해야 합니다.
+    // 지금은 간단히 사용자 이름만 확인합니다.
+    if (username) {
+      set({ isLoggedIn: true, user: { username } });
+    }
+  },
+
+  logout: () => {
+    set({ isLoggedIn: false, user: null });
+  },
 }));
 
 export default useStore;
