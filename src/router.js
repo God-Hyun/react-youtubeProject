@@ -1,20 +1,15 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Works from "./pages/Works";
-import Test from "./pages/Test";
-const MyRouter = () => {
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SearchResults from './pages/SearchResults';
+
+const AppRouter = () => {
   return (
-    <BrowserRouter> {/*history stack을 생성 및 관리*/}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="works" element={<Works />} />
-        <Route path="test" element={<Test />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/search/:term" element={<SearchResults />} />
+    </Routes>
   );
 };
 
-export default MyRouter;
+export default AppRouter;

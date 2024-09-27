@@ -1,11 +1,14 @@
-import "./App.css";
-import MyRouter from "./router";
+import React from 'react';
+import AppRouter from './router';
+import Header from './components/Header';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <MyRouter />
-    </>
+    <div>
+      <Header />
+      <AppRouter />
+    </div>
   );
 }
 

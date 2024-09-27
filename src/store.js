@@ -1,8 +1,20 @@
-import { create } from 'zustand'
+import { create } from 'zustand';  // default import 대신 named import 사용
+import youtube from './api/youtube';
 
-const useUsernameStore = create((set) => ({
-  username: 'unknown',
-  updateUsername: (newName) => set({username: newName}),
-}))
+const useStore = create((set) => ({
+  videos: [],
+  selectedVideo: null,
+  searchTerm: '',
 
-export default useUsernameStore
+  fetchVideos: async (term) => {
+    const response = await youtube.get('/search', {
+      params: { q: term },
+    });
+    set({ videos: response.data.items, selectedVideo: response.data.items[0], searchTerm: term });
+  },
+
+  setSelectedVideo: (video) => set({ selectedVideo: video }),
+  setSearchTerm: (term) => set({ searchTerm: term }),
+}));
+
+export default useStore;
