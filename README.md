@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+React를 활용한 youtube 클론 코딩
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ // Start Generation Here
+# 프로젝트 소개
 
-## Available Scripts
+이 프로젝트는 React를 활용하여 YouTube의 주요 기능을 클론한 웹 애플리케이션입니다.
+사용자는 동영상을 검색하고, 선택하여 상세 정보를 확인할 수 있으며, 동영상 목록을 탐색할 수 있습니다.
 
-In the project directory, you can run:
+## 주요 기능
 
-### `yarn start`
+- **검색 기능**: 사용자가 키워드를 입력하여 관련 동영상을 검색할 수 있습니다.
+- **동영상 목록**: 검색 결과에 따라 동영상 목록을 표시합니다.
+- **동영상 상세 보기**: 사용자가 특정 동영상을 선택하면 상세 정보를 확인할 수 있습니다.
+- **반응형 디자인**: 다양한 디바이스에서 최적의 사용자 경험을 제공합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 설치 방법
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 저장소를 클론합니다:
 
-### `yarn test`
+   ```bash
+   git clone https://github.com/username/youtube-clone.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. 필요한 패키지를 설치합니다:
 
-### `yarn build`
+   ```bash
+   cd youtube-clone
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. 개발 서버를 시작합니다:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 사용 기술
 
-### `yarn eject`
+- **React**: 사용자 인터페이스 구축
+- **Redux**: 상태 관리
+- **zustand**: 상태 관리
+- **React Router**: 클라이언트 사이드 라우팅
+- **Axios**: API 통신
+- **YouTube Data API**: 동영상 데이터 제공
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 기여 방법
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+기여를 환영합니다! 버그 보고나 기능 요청은 이슈를 통해, 또는 풀 리퀘스트를 제출해 주세요.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 라이선스
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+이 프로젝트는 [MIT 라이선스](LICENSE)를 따릅니다.
