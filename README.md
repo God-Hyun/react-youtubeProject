@@ -1,6 +1,5 @@
-React를 활용한 youtube 클론 코딩
+React를 활용한 youtube 코딩
 
- // Start Generation Here
 # 프로젝트 소개
 
 이 프로젝트는 React를 활용하여 YouTube의 주요 기능을 클론한 웹 애플리케이션입니다.
